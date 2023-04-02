@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--blog icons-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!--FONT IMPORTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+        <!--STYLE SHEET-->
+    <link rel="stylesheet" href="tryzom.css">
+    
+    <title>Document</title>
+</head>
+
+<body  bgproperties="fixed">
+    <header>
+        <nav class="navbar">
+            <div class="navbar__brand">
+                <img src="https://1000logos.net/wp-content/uploads/2021/06/Zomato-logo.png" alt="logo" class="navbar__logo">
+            </div>
+            <div class="navbar__nav__items">
+                <button onclick="location.href = 'https://www.zomato.com/chennai/order-food-online';" class="button__primary">Order Food</button>
+                <button class="button__primary"><div class="btnLogin-popup">Login</div></button>
+            </div>    
+        </nav>
+    </header>
+    <!--************************************************************************************-->
+    <div class="wrapperout">
+    <div class="wrapper">
+        <span class="icon-close"><ion-icon name="close-outline"></ion-icon></span>
+        <div class="form-box login">
+            <h2>Login</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                    <input type="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                    <input type="password" required>
+                    <label>Password</label>
+                </div>
+                <div class="remember-forgot">
+                    <label><input type="checkbox">Remember me</label>
+                    <a href="#">Forgot Password?</a>
+                </div>
+                <button type="submit" class="btn">Login</button>
+                <div class="login-register">
+                    <p>Don't have an account?<a href="#" class="register-link">Register</a></p>
+                </div>
+            </form>
+        </div>
+        
+        <div class="form-box register">
+            <h2>Registration</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="person"></ion-icon></span>
+                    <input type="text" required>
+                    <label>Username</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                    <input type="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                    <input type="password" required>
+                    <label>Password</label>
+                </div>
+                <div class="remember-forgot">
+                    <label><input type="checkbox">I agree to the terms and conditions</label>
+                    
+                </div>
+                <button type="submit" class="btn">Register</button>
+                <div class="login-register">
+                    <p>Already have an account?<a href="#" class="login-link">Login</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+    </div>
+
+    <!--************************************************************************************-->
+    <main class="container">
+        <!--hero section-->
+        <section class="hero__container">
+            <div class="hero__image__container">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ--TD3G5_1gx3zUxvA9p0YI741NbwEz2filA&usqp=CAU" alt="hero image" class="hero__image">
+            </div>
+            <div class="hero__description">
+                <h1 class="hero__text">
+                    Order foods from favourite restaurants near you.
+                </h1>
+                <button onclick="location.href = 'https://www.zomato.com/chennai/order-food-online';" class="button__primary">Order Food</button>
+            </div>
+        </section>
+    <br>   
+    <br> 
+    <br>  
+        
+        <!--Explore menu-->
+        <section class="explore__menu__container">
+            <h1 class="explore__menu__text">Explore Our Menu</h1>
+            <div class="explore__menu__gradient__bg">
+
+            </div>
+            <div class="explore__menu__lists">
+                <!--Burger-->
+                <div class="food__card">
+                    <div class="food__card__image__container">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQopZZi1NqVhvNLPi6q_GLneguu3DLzpuvLNw&usqp=CAU" alt="burger" class="food__image">
+                    </div>
+                    <div class="food__card__description">
+                        <h3 class="food__title">Burger</h3>
+                        <p>Burger King, McDonalds, Burger Place <span style="color:red">+3</span></p>
+                    </div>
+                </div>
+                <!--Pizza-->
+                <div class="food__card" id="pizza__card">
+                    <div class="food__card__image__container">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzxt09I6UligmYLMBsokTZLJ1F2wnq00Jjww&usqp=CAU" alt="pizza" class="food__image">
+                    </div>
+                    <div class="food__card__description">
+                        <h3 class="food__title">Pizza</h3>
+                        <p>Burger King, McDonalds, Burger Place <span style="color:red">+3</span></p>
+                    </div>
+                </div>
+                <!--Ice cream-->
+                <div class="food__card">
+                    <div class="food__card__image__container">
+                        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBIUFBgVFBQYGRIaGBoaGBgbGBgZGBgYGhkcGRgbGhkbIS0kHR0rIhoaJjclKi8xNDQ0GiM6PzozPi0zNDMBCwsLEA8QHxISHTUqJCozMTMzNTwzMzM2NTEzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzEzMzMzMzMzM//AABEIAQoAvgMBIgACEQEDEQH/xAAcAAABBQEBAQAAAAAAAAAAAAAAAQMEBQYCBwj/xAA+EAACAQMDAgQFAQUHBAEFAAABAhEAAyEEEjEFQQYiUWETMnGBkUIHFCOhsTNSYnLB0fAVssLhghYXNEOi/8QAGAEAAwEBAAAAAAAAAAAAAAAAAAEDAgT/xAAiEQACAgIDAQADAQEAAAAAAAAAAQIRAyESMUFRBCKRMhT/2gAMAwEAAhEDEQA/APKya5NdTXJpiCuSaU1yaAOWNck12Fpb1srg0hjVFFFACUhpTXNAAaSlooAQUUopDQAlIaWigBKKKSgBaKSigDqkoooAQ0UUUAWBpDQaSmIDXBFdGuaBhNI5mkNIaQCUCiigBDSUtIaAEFFLSUAJSGlooASiiigBKSlpKACiiigAooooAKKKSgCxY1zSmuTTEIaRqKQ0DCK5auqSgBIpDSk1yaQAaSg0lMBaSikoAKKKSkAUUUUAJSUtJQAUUUUAFFFJQAtJRRQBPNIaU1zTEFIRS0lMBKRhXRrk0hiKJxUhdOBg81xphLqPerzoPR31d/4SuEwWLEFoAZVEKOSWZREjkmcUdK2HbootTZCiRUWa9bv/ALO9KgLXb9xlRd7qoVZgTAA3MQeBGfyKaXoHT4QfAQ22TduDk+ZiNv8AEDScR8piWOIqcskUUWKTPKZpa3fWfC2hA/hX9j9lZtyxOMRujtMmsfren3LR8wBWYDqZRj7N/oYNOM0+jMoNdkSaSgUVoyFJWl6L4K12qT4qIqWjkPcbaHHqogkj3iKvNL+z606z++boYqSlqUDLO4Bi3mAI5pNpDUWzz2ittrvAZRfJqVd5wrIUBGBhtzZyMR3rLdR6dcsMFuLEgFSMqwgHynvzQmmDi12QqKKKYgopKKACiiigCbS0hNFMQhoikNFAA1cNXRrlqBkzo+ne5dVEUs7GFUdyePp9e1eweG+iJok35cgAuyKSbt3lVXuLag7RPJLHnjznwPu+JdFsL+8NZZbJYAgMSN4GRDFNwn03eteta7qQs2xbVSwRFACnzvEblUfqYiSBOc1DLLw6MML2ZrqXWWRXv37bq5ICKGVliIVvKSN3OMxI+tZLrWpZA5tvALg7AI27lyeMN9CeD7Vu9ZpQ1tbdxVFx0VyvC5Mg8fNuAn6z6VmL/SUa2Qf7TzAsDtAhtsyQNyhlmB98EVHSZdt0yhtJeZdwffkD5l3E577TiBPrTmr1Qb+Gy7l2BTJIYOQGIE8HPpiOKrtK5DFN5BQgAhjtaCRIniR6kc/aplm0bjm4JMHzNhRG0hiJjIIU/c81R6JrZnNRaKMVII9J9O1bjwD4TW6P3vUAGwpPw7ZiLrLIlv8AACIjufYZzHW1G5QsEwykAcENAH9P516xduW9FprVk5a2iwgiXcQTAju5mqOX62RUP2o5631e4u5FtB0IKkDawgKIXYWAiSZHAET3qDqeoXyk2BaLKo3hjGyJBMCe8Adu+arNVr7bEXLhUKfMlsEqok+VmJ+ZiPbvFd3bqXLBuFpRpV2IjYhDAECQYkAxgY9cVy8nZ18UkQf+v6p5QWwbiAqx8u0MTht0jAGftmouvt3GC27ipttoX2SWLb9zlExMKqkdoggE80xbdLbPad1ZIDZBJc+WJGZ47YjsZqI2quXLquTIecKsBUYsu0LwP1DBOe81ZL0lKii11j4dxk5g4PqDkZ7/AFqLVxr0BtAwNyOyyDPlYblH2yPv7VT1eLtHNJUwooopmQooooAm0GkopiCKSaRjXJoGKTSc/WkNeqeEPBbWbI1N1J1brNm20D4M/K7AkefIPqvoW4zKXFWajHk6Kvw14Kvog1Gpufu6hlZYIF1SnmBbdi3BAOZPaBWnfUINZbW0jMvw28yr5d0ASGB2KCsmYE4G7tVN1zp+q1DC3duJYthAPhhtzIp+XyAANJMSpMyf8td9B1dzTte073Gv3FChdqvu8wdirMQc5SAT6xxNc8pOSt/w6oRUXS/pbafV21fbJfztLHLqHUvBPcCEX6KJqv6vZ3W9hyz2yFTft3lVJcgnIMAkg9h+cy+s1l1jclJFwKzovnBfaCNjYjyqDiZX2NaZOnIlt7vxGuXSVDM0AqsYQEQAu+cCASfasNUbWzL3+nrbQlk3XGGzygtJIhys4G3sx594qr1equWma18qqSf0ncpyMjn6A+s1Z9Y6gitCZK4gQZORtEcQMz9R61Q6l91xSy8rx/dyf6TVYr6Sm/gnS9Lf1F5RaEspDT+lACPMxPA4+tbrruosi+7XGVm2H5guPNkARnHvUHw5csafSrDkX9Q4UysEQSqbR3WSTu7n6VT9Q6e9y477l27mbLHI3HeynjaDM57+4pyd68MwTW/RtWtIGZ1SIOwQdzEEFRjjjn8+9z4Y1BvLfuON3kjaoMKoBgKvdmPfkbfesmLKbd05WDt4lZ9fWthptTa0um+JbjbcVphoO/a3b2YAe2azJKjcW2yDf6et11c7UhJYbi27zMpUkEA5BzOZj0pzqejs2UK21L31UEuWhV77QowcSP8A3UPS3tTetKVVQE2KrbVgLuAkjbJA5PoJNWS9Iu3CzfECKXO2EBYrMKST3AE44zx2V8e2OuXSKDXaN/3cPuwCpZYb5iCSxJUZwfzzVBW71PRGVC1q6xbayuCN4dG+YrjJ9h2GM4OO12he0YbIPBHBq0JJnPki0yJRRRWyYUUUUASyaSaKQmmAhNJS0kUAbH9mfQl1Ws33BNmwBcYdmef4an2kFvcKR3r17V/Mz/rIgE8Ac4HpOT6wPasb+x7ThdLqLsQz3Qk5yEQMB9PO1avVuO1RybZfFpFc+1ZMQcEwBJIAgk8mo7X4lgPN2PfODn8Caa1+qFsgt8h5MgZjGTgZxmqu9qdyMZ2o0gMZAPuAf0yDBPMfSudsukUd3X2rV9Ut+dmeWVIKCSZn1Mkz6VXHxLc+K1tWmyZVVJVQvmDHzR3ZQZ7Zin9BZGnW7bRhLXUCOfKzKvK5j+8pxzn0qms6JblyD/ZB4ZhCj67icmT+AfSrRjHZOTloE6feIyNpECGGBzOIx9xUe+VBhj5xMntmMrHPf2q3TU6jUKLYXzgFSx5dTIDH1MTngxP1n9H6BbS4rXnBuRIQnDFRuB9SBtOPak5cbs0oXVEG7odXdufD3+W3aWWAiERTtExJPlI+1MajWM9v4YO1JjbBGB+lUHJxknEgRwatun611a5bB3fFQhDkqzEkJnmMv9yKyrXXNxi/zSdwOM8niswk5dhNKPQ9cseQn02yO0A9x9zV/wBRsC/cVLYG0ACAAAq+gA49KpNM7OROAOF7Ewcn1MVo/DyJbJjmRLHuOQJom6NQSZoenaJEVU2+XgiTHPcTESKiadgLl20PlRwVjMAgOo+xMfQVP3fbuPTP/sfzqtCrbv3FAhbkXVPAO6d4BPMMCfbcBU49G32PXrhVyVwIBj0YM0kfbbjtHvWT61ZG50Pykl0/yuZx9G3CPYVo9c8Se/8ATtifYn8VleparcVEDyhs/wCbbj6Yn81aBDIZphBIpKf1Qhj7xTFdByhRRRQBJNJSGimAGvRv2aX9G4azesi4+SAU3TPvXndtGYhVEk8Ct74KuLorq3Lg/wA33/2rMq9NRTN5oLtnRq4t2WRC4d0VW3DhWZVPJAjAyYgUu8EHz7t3nBxlCZSMCMCOJ9eakXfE2juK0um0ggiex5mqK1rraBn+Kr7U2xgAqCSGy3l5g8AQOwqORpPTTLY02qaoh9Rvo1w2mg3FCvDAhQDJViDExAP4OIkUGo1rMt4Xp3oBOJnewEBZ+g/+XvNW9xVt7ESxduXHjYwVIeBBcsSCM92A59CKp+pLrbhZE0bKiMnxA3mYlTuUbhAOZPln3qSaZemls56odMbVm1tT47qhuXCCTaLecqx5XcSe/DHtFV2vNubdi3v+GHBfaMHG0wDmfqTzWiToFzUhWuKbNhiZEQ7sRkxEniAYgDgCpep6T8NVNssHYEhtoZ1ZWPmOZJyROOaxLPFdsax2cdK0du2LlwqArMSoOSQsLJbMg/NHbdR08pd1YLGNqOy44IUjv25j7V3rrT2gqAAqwHE4LZ2/84xxUDpptox+IdupDkBDh2RrYgAdhnkioufJNopVaKm6rJGwf2T7JI80zMx2EiqLUXJvF2A3MSSI8snkD2/3rTa5muXG2qEW4hckf3sjzHsAV/JrJ9RQqytPbPsR2q+B26IZNbJV6wSw+EGCkndtU8ASSBzHP4qf0vUqLgj5CYgnK9gQeeSe45j6Vmk1rqfLG08zT76t1dnZZYlSCo8hVeVP1jnnAiqtN6ZlNLaNzauY78cc4jgfiomuVi1toMpuz22MJIiTncEzxk1A6drhHmO1wJZGjKZKweZGMR6+tF7VblYowIIKsDIB3DOeRJ/mKmlTKN2jvX3hFZfW3M/erHXasAMD+mYnkjsfeaz2o1E8V0QRz5JDF8yxpuiiqkAooooAfFBFBNJNMC68JBP3pPifL3P1xXvF7wt024qxtJMRLSD+K+d+l/2grd39ZrLSpseQM8/61hyp9FFC1pm46x4D0gUkEoAJMHH8s1Qf/b5kVm+IwAiGlSBuGAR3wePeszqvF+rk7+Ygzmamp46vCyV+GCBEMS0ExMfWpzSfSNw5rtkvTa9tDcSzq2R7ZEJc2lltpIBXb8wXjg49CONAmkWLgQud6lldYNtg43KVYeleX9X8S3tU9suiKUJK7QZM+pJqx6B4xu2LkXd72cyinayzzt7Ed9px9JM82X8bkrXZeGVp0zdPc/gjbd4K5JPy8Eex4wKjdVDlLZ+Jhd+7zETwQBGSfapyFL1h3tm26Eb02SrsqmQCvqDgjmRFR+padQltntuCGIC4HmYd54GPeuCSa7OhNMrOq6cG4jFwB8NYGSSRyQP9akOyL8b+/cYvGRCp5YJ9ZBMCk6qlvdaO192whRgAANmfv6U9rNvxE224LpALdgQRx3k9/ekwM1fZri4iAzLAwJ27+/vNZ/qlsNvQcjzD0nkx/MVodTprnxfNgRCzgbgRhVGYMH1qs6haAG4fMuCT6GSIH+9dWGXFqiWRWjN6H5stA/P8qv8ASacHzu4FtRJ8s4OAAvJPtVFdUo5xjn81b2NWriWYhFWFRfmYn/33NdeW3tEYUtDmoO5VYkpYWSoVSrO4xnOWIjM4zVZrNWVPlxOdszE9prvV6thliGfbtUdkHcARE+pqmJmqY4fTE8niHb19mMk9o+1M0UVYg3YUUUUCCiiigB+komkmmBM6Yf4gre39UGQCBMjP0rz/AKe38QVozqYgTipSdMtjVxImuYm45McH6Umm1S/u/wAMgbt0z7AR/rUTXXdxp1wg3lR5VVR/IT/Ok1yRtPixpEG9eKk64Aek96rreoG4Yo12q3HBrCi6o3KSNd4EXVk3TpHRrq7S2muMFF5CCCyEkAOCAJkcjPY7w2rnwBuF206kEi8B5R+uG7gD9QkGOa8p8G3B+8Z/w/X5hXvGitMbcrddDHG4kH2g0sv48Zr4yKzOMtdGX11t/IVZHG1pcbTC8iCa56st1rgKtyFLGVVQYGAeY+laPqOjdY3Cy4JkBrKMeIJkQZzVfcVGAV7FsmSoUG4kRj9L/SuZ/hS8ZZfkr4ZvU6NRe3lhAMCBJO4beTwKzXWNJAKp6b27kgDHsBBJ+1bLxbqtJpbgFzTF2AmUv3BEZ4Y1iupeKdJcDAae4pbB84MiIgkEGPatR/EnF3aF/wBEWZ/qlgqFJ+aIIPPpn34/NVougZ79hVy3UEfAtAj0OfzJNOBljFm2D67UP/jXZCLSpkJTTejPq5JkjcfpNc3I7fepmv1DsfMfsMCq81sxYUUUUxBRRRQAUUUUAdzRNJFEUAP6Q+cVdqjYkGqbRgT71oBqmCD1qU3s6Mf+SJqEC7iwzEKPeurCD90cnkuo+wFRNTcZ2M8mrDVMiWmtfqJB/kK1B9sJoo7K+YU3qBmnhhhTWpHmoTMSRc+Dkm/9AD//AEK9zt3IVB+TXhPhN4vj6r+NwmvcNuF/Na8Iy7JOrvHeKim81y5amCd8T3wwAn1p7U/MCaY6Vbm5bPP8T/yBooLMh+1NNt8+4NeW3ea9Y/az/b/avKLwzTY10Pafmr61pWa3u7TFUFrtW76Oi/u8N3k/Sp5J8VZTHDk6PP8AXLDEVDqb1JpuNHG4gfSoZFbTtGGqdCUURRFMQUUURQAUUUUAOEUoFFIaAHtJ81WJJ4qssPtYGrL4iNkGKlkWy+J6HNgHPNM68y5NPSP71c65UzBk+3EUl0aZXsJz3pm60mpCLn2pvUoAfKZFaiYkWfhS3uvgTHH/AHA17XauQqnOIH4rxfwf/wDkL9V/7hXsDqQfaqLo55dj+rvbjzVh0e2JssO7z/MVXfDJM1ddMSF0/wDmP/dWkZbMd+1HQl3a4DlSAVxkEEyPcRmvH9RG7HFey/tCsNc1lq2CYZl+3BJj1gH8V5H1K2gvOtv5A7BfoGisMohhBkfatvqLbW0O04jisrf0DoYPI5rW6nXqUhhOBmubLJSSo6sMeLdmD6lbgz6k1BFWnWrgZsD6VVV0Y3+pHKv2FrR+EdDbuO3xbbMsQpjyhpEg+8Gs3Ws8HdZuWybWSkFgAoO09ycgxxSy3xdDxVyVmhfwtafNsgN2/wCGqbqfQnsw1yAskAKDJKgsYkxwPWtdpOo2nAhcnsPK312NBrHeMeo3bjm0RFpGlJU7mkfMfsTXHj5N1Z2T4pXRT6m7a/UNx9BGPqRx9iajixbfIVl9g0/1FHwtokwPr+RinbGpVSfMR9M9/Ye39K6kqWjmdN7K2ilipVrpt1lRwnkd9iMSoBbGMnAzycVU5yIBQyEVe/8AQtrKDdBDHbuVGZd3oCMHg5q4Xpdq3bJYC5dSS6SduwwFj1OGP5qbyRoqsUjFbmHegu1eqW/BOnZA9tS5ZVfaSyuJEwExj3zUe70W0p8tm2sHLFRIPtJ/oDWHmivDawyfp5rbV2mATAkwCYHqY7U3Jr0i38K3LMUTdgklVLeuBn7VRa3p+hckWrhFxuJV9oP1I49accyfg5YGlpkLwWJ1SekifyK95GgGwEnMT7cTXg/R1bT3mDETtkEGVInkGt+3iYvbVFY8Qf8AaqcvhDgzbWkB4yINStE0fuw/xH/uql6Br1ZQCf0x96kPqgqWCOQT+ZFUiyMlszf7T75F/crEMokEGCCByDXl2htm5dXuSwJ7k5kzWz8e6otcafSKpfBenD3mn9KSPyBU5elo+Ejq+Lj/AOYxTOk1aEKrYIxPt2p/rSE33A53YHqZiK41PhLVhtyqrpPKtn8GK5IxtHXKSTKHxGoDiI47e9U1ae90YtcZLjnemGRVkqV5BY4n6SPeolrpdhpKu+0ZyFkj84+tXhOKVEZ45Sd0UVbbwToEa1dcq5uSApVdwCweYzk/0FZ5+moSQrwR3aCpgwYK5/lWl8HdSuWLVy2uwy5meJ2gDPMUZJJxYY4uM1aJrW7cnzMB/iVh9e1Rr/SdPcJLXBPqW4+k/wBKfbqLrl7YPrtJn6xFct1cbc22zxII/rXIk10djafZT6zo9lbbMHWRxEZ+01lWrZdV1doplfMRwsH+lZFrZngj7GurC3WzlzpaovdD0y0LD3L8Bz/ZDfBMSrAqODI7nscVf2vg7xpCoFogsIY7ZXssndDGck5BwRVNr+q2Fb+FbQlcLIL2xPzwXO4mZOZ5nFWmrvBm3rqk3kQNiAy23zBVHmgZiTyc0S5PbHBRWkGq1rWtyWLbKTuVQu4KMz5SpCgZz3zknNRDssom5mDB0uMGUkPtkkCScQdvOZ7cUut1qaq6oRrgfCqAsKELSzbp3YHcjPpSWNNYVX+JbuXYEAsCGVoB2gEgnBGQDjPpWapbN3fR6h0/xJYvohuBWQiUdZBHb2Iggj7VQ/tFL/DtfCvAoxfd5ZdgAsDcolhzzHNYhL2194CqAoIgrugLhVfIVdp4/wCCR1jUXboCXjbVl+UgsQxeMFR+rAE8ealTsLSVlSthCQW3eoyBOM4BMDE89q5uKkwORxkke+akno99QS5CREQBJH0ORXa9KXaHLhbkA7GUscyfXnE4/Fa19M7+FdqgNzbSN8LgEQQUG4LGJDdqd0mpYgKJ3An8CJqPq7yXVAS3tKx5plmAEQffvVv0BLgdVu2UvIwEKzhXAOfLcXzKf8JIqnhBvbNp4a1RO1VywEn2gxn81Nt9WQfCDAlQ7bj7SP8AapWgu6K0gDabVWDKkn4fxhghvmtFjGO9SFv9K8m7VW1AmRcD2icRw6itRaJSb+GG8aXEuXHuDCkDaPfuKrfBOqVNQQcb0Kj64I/pWk8W6PSXW/g6zSBJmPjrP8hWP0unt2bgdtRZbawPkctwe2BRJo0vDQohbUvcZSFttOf75nb/AL/YVrruuKW7dq2JvlAxnhN2Zb/LwPcVkLPiNHvIqOnnuKFG1j5mO1WJHoSD9q1PT9LDMq+e4Rudp+Y+k+ntXNNuKpenVjqUrfhm/GOk+HbRkuKGZWW4WYK1yIIMnnkjHtWIu24JAdGHsfQdh/KtF4n6Tq7l03LjbhMAAEbV7BQTn7VQf9HuTB9Y/wCelODil2anyb6OVsn1AwOTGOIOfSpiMEWVcAkAkKRz7j/ekPh5/vEx/wCxio2p6det5K4H2I+1NuMtJmalHdGg6d1D4jKG8rDg/T+oq88QW7uxbkJDDAWZ++IrH9L1SmAyz7jBrQXtLevIRbujaATDSCo+k1GSSkWi24lMbtz0H5pN7tyVHvk/aol1WUkG4CR7Y/rUY3iP1j/n3qihfRNyGLOmDW3f4igoRCHfveTkrCkY9yODTvT+qXLO8IQN4AaVBkAyM8jntzNQpoSupxT7ONSa2i9teJdSLnxIU+UqQJAIJk/zos+Ibyq4Kgvc/XJDjy7VEjsMmPftVWkf8ipY1bbFtBFA3Es/6m9AfpWXjj8NrJL6TdJ1xSWF+2xTZtUKTg5jcP1CTyc4HNcaZ31J+EjlLI/iZlmUJA8kmSRiBPrkZqIePandJ1G7YYvafY0ATCngyORjOZFDhXQ1O/8ARcDUPuZ3dyqwQ5trvaDBWJ8olRHl5J9Kr9fc0zks4KR8ioylmDeYbpkCDPoc1YJ+7aoKN7pd2H4jndtZxkrIMQxIYDkRFN3NIpLrYS0tlZl2BZjmSFeDntzj1qSdPZZ7Wtlj0q9ZdWush+AiBFtMGVQ4AJcfD+bMjg+9TvDup0IuO6JBJZwFDFvKQDuDH+HlgJJiqlOhhzvOrKWlIUiDtlQPlVoB4njNaFND0q1b23bRbfbG664hmyCcyNr8celaVJ9kntdF4/jfRqTbuWmWFBDB7be5BlhwPSR94FXSWdNdsLfXcbbJ8QGCCVIkY9f968eR9HvS1aUNvuefd5mZC67UUnuYOCQMg/T2u5p7Ysmyo2W9mwKvl2qV2wI4xVYbTshlSTVHnXX9DYuFvhmSgl0b5hgwDHuIwe1ed6qxB+09gIr0G14cuab4qfEL2XyAfmUjgz9D/Ksf1KxDtHBJA+g4o40h8leit0LFLiOsbkdGHpKtI+0j+des6VtPqBbv2mZXkkDcFYH5WDKD5uBz7GvJkBB/56Vtv2e9ZNu5+73Gi1cMqScJc4+waAPqB60mrVGk2to3F1luDbdEns8ZH1FeedQ1VsXXVFBhissDJgxuMCAO8Ga9OuJbJMOp9+32PFef+IPCeru33uW1DW2IOHQwAIHlme0/euWWFt7OuOZVoy/Uuou5jeSQSJB2gAHERx3qAtvcw3FjnPc++TV9b8I6skAW1xE+ZQak2vC9zcPiOqR6Akzwcn/aqqDiqROWRN7Mu4KsGSdpzBIwe4HtWn0XVLRtFXX+I2FUrJJOIHvVtp/CqZDPJ24LCRjgEKPrmodrw5daWt3YdWOwlGXYZyFJPmXmJ9aUocuwjk49Ga1ehYKzshVe0gy30qBcEcfL2O0wcZH1FejHwvfuL8O4QbYbdu3kO3kgLhcLPaqDUdDvW/Ilq4wBOGA8p7gGcimrS2gbi3pmNpVrmK6FdBzF3oer27dsJ+7I7ySzsZLcwIIwAD2qNe1XxGJFtUXsq/8AM1DU08lZUUnZpzbVFt1PriXES3bt/DAQB+IJHcfjnmjRXUtW2uXLdq4jkLsb+0TaclT+mZ++Kg6PRvduKiCXMx24EnP0Fc6rRFHhoJHcHFLilpD5N7Zb9R0+kgta1O1SJ+ErExMiDPcCP51Ms9XN3SJbRNoRAj3dsID2BI4JArM/uwPap2k090o9pbhW25BdezFeJrLxujSyJO6On1QubUu3eC20kDaFIE85DYMNVnf1ly9FpGR3cxiCT6kEnGAcYrjReGrSgtcBbHEkD7n0p3qFwIiJYCWzvJ3CJOIkn1559KnNJNIrCTkmzQ+HOh6C3YuXb9iWt3YJYbjgAjaDwM/yp271/V297lg6u5+GgA3BJkTiAAtZ9OopZslC6up3FshiznG4k88cfSstreqPubax2vBPO4f4Zp3KWkY4RjuWz0h/ESvY+JdARixUAZJPEx2z7msv1W0IBHeOfzn8CufD+ttXnX4tyCn9naI8vHM9/pVh1q3Jn3mrQ5VshPipfqZS4mfaTSq3v9adu2sTUehoaZtOjeLbdqylq5bY7ZG5SvBJPB+tWaeKtE2Tcdf/AINI/FeZ3DUR2NAUexf/AFroU/8A2MT6lGn74qr1HjHp7ZLPPPyHmvLSaKYqPTG8d6QcLcJ/yqP6tT+h8daZ3Ci0ysxAUsyxn1Pb+deWVI0V4W7iOVDBWBKngx2rNmuKPReq+MtTaYqtpEI4LEuPwIFYvqPW9Zecu+oubj/dYqAPQKsACm+s9Za/jbtWZj+lVJaiLbWxyjFPR1FdAVyK7WtmDpRTitTddCmIlWL7oQyMVccMORXVvcZLGWJkmo61ITj7UV6O/CbajFXPTFE8VS6firzpVBlmiXSh12kYjNQx4F0r5JcewY/61caHirJaVCUmZU+AtJuBlwJ4DYx9ar+veD0+a2I9RW7eo1z5aOIcmeaXfDLIAwPmGamh32FWyYrUa7g1ntV3oSCymuIYNQCKs7vf6VVtQaQzcFRGWplyo3rSGMRSgUppRSGJFE0tcmgYjUlLSUCP/9k=" alt="ice cream" class="food__image">
+                    </div>
+                    <div class="food__card__description">
+                        <h3 class=""food__title>Burger</h3>
+                        <p>Burger King, McDonalds, Burger Place <span style="color:red">+3</span></p>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <section class="info__collector__container">
+            <div class="info__collector__gradient">
+
+            </div>
+        
+            <h1 class="info__header__text">Wanna get our latest food updates ?</h1>
+        
+            <div class="details">
+                <form action="/action_page.php">
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        
+                    <label for="country">Country</label>
+                    <select id="country" name="country">
+                        <option value="india">India</option>
+                        <option value="canada">Canada</option>
+                        <option value="usa">USA</option>
+                        <option value="australia">Australia</option>
+                    </select>
+        
+                    <input class="button__primary" type="submit" value="Submit">
+                </form>
+            </div>
+        </section>
+    <br>
+    <br>
+    <br>
+    <br>
+    </main>
+    
+    <footer class="my__footer">
+        <nav class="my__footer__headcontainer">
+            <div class="footer__heading">
+                <img src="https://b.zmtcdn.com/web_assets/b40b97e677bc7b2ca77c58c61db266fe1603954218.png?fit=around|198:42&crop=198:42;*,*" alt="logo" class="footer__logo"> 
+            </div>
+            <div class="footer__heading__items">
+                <select id="language" name="language">
+                    <option value="english">English</option>
+                    <option value="italian">Italian</option>
+                    <option value="freanch">French</option>
+                    <option value="japanese">Japanese</option>
+                </select>
+                <select id="country__foot" name="country__foot">
+                    <option value="india">India</option>
+                    <option value="canada">Canada</option>
+                    <option value="usa">USA</option>
+                    <option value="australia">Australia</option>
+                </select>
+            </div> 
+        </nav>
+        <hr>
+        <br><br><br>
+        <nav class="my__footer__content__container">
+            <div class="footer__content">
+
+                <div class="footer__content__block">
+                    <h4 class="footer__content__block__head">ABOUT ZOMATO</h4>
+                    <nav class="footer__content__block__body">
+                        <a href="https://www.zomato.com/who-we-are" class="body__links"><p class="body__links__text">Who are we</p></a>
+                        <a href="https://www.zomato.com/blog/" class="body__links"><p class="body__links__text">Our Blog</p></a>
+                        <a href="https://www.zomato.com/careers" class="body__links"><p class="body__links__text">Work with us</p></a>
+                        <a href="https://www.zomato.com/investor-relations" class="body__links"><p class="body__links__text">Investors Relations</p></a>
+                        <a href="https://www.zomato.com/report-fraud" class="body__links"><p class="body__links__text">Report Fraud</p></a>
+                        <a href="https://www.zomato.com/contact" class="body__links"><p class="body__links__text">Contact us</p></a>
+                    </nav>
+                </div>
+
+                <div class="footer__content__block">
+                    <h4 class="footer__content__block__head">ZOMAVERSE</h4>
+                    <nav class="footer__content__block__body">
+                        <a href="https://www.zomato.com/" class="body__links"><p class="body__links__text">Zomato</p></a>
+                        <a href="https://blinkit.com/" class="body__links"><p class="body__links__text">Blinkit</p></a>
+                        <a href="https://www.feedingindia.org/" class="body__links"><p class="body__links__text">Feeding India</p></a>
+                        <a href="https://www.hyperpure.com/" class="body__links"><p class="body__links__text">Hyperpure</p></a>
+                        <a href="https://www.zomato.com/report-fraud" class="body__links"><p class="body__links__text">Report Fraud</p></a>
+                        <a href="https://www.zomato.com/zomaland" class="body__links"><p class="body__links__text">Zomaland</p></a>
+                    </nav>
+                </div>
+
+                <div class="footer__content__block">
+                    <h4 class="footer__content__block__head">RESTAURANTS & ENTERPRICES</h4>
+                    <nav class="footer__content__block__body">
+                        <a href="https://www.zomato.com/partner-with-us" class="body__links"><p class="body__links__text">Partner with Us</p></a>
+                        <a href="https://play.google.com/store/apps/details?id=com.application.services.partner&hl=en_IN&gl=US&pli=1" class="body__links"><p class="body__links__text">Apps For You</p></a>
+                        <a href="https://www.zomato.com/enterprise-solutions" class="body__links"><p class="body__links__text">Zomato for Work</p></a>
+                    </nav>    
+                </div>
+
+                <div class="footer__content__block">
+                    <h4 class="footer__content__block__head">LEARN MORE</h4>
+                    <nav class="footer__content__block__body">
+                        <a href="https://www.zomato.com/policies/privacy/" class="body__links"><p class="body__links__text">Privacy</p></a>
+                        <a href="https://www.zomato.com/policies/security/" class="body__links"><p class="body__links__text">Security</p></a>
+                        <a href="https://www.zomato.com/policies/terms-of-service/" class="body__links"><p class="body__links__text">Terms</p></a>
+                        <a href="https://www.zomato.com/directory" class="body__links"><p class="body__links__text">Sitemap</p></a>
+                    </nav>
+                </div>
+
+                <div class="footer__content__block">
+                    <h4 class="footer__content__block__head">SOCIAL MEDIA</h4>
+                    <nav class="footer__content__block__body__socialmedia">
+                        <a href="https://www.facebook.com/zomato"><i class='bx bxl-facebook'></i></a>
+                        <a href="https://www.youtube.com/zomato"><i class='bx bxl-youtube'></i></a>
+                        <a href="https://twitter.com/zomato"><i class='bx bxl-twitter'></i></a>
+                        <a href="https://www.instagram.com/zomato/"><i class='bx bxl-instagram-alt'></i></a>
+                        <a href="https://www.linkedin.com/company/zomato/?originalSubdomain=in"><i class='bx bxl-linkedin'></i></a>
+                    </nav>
+                </div>
+
+
+            </div>
+        </nav>
+
+    </footer>
+        
+    
+    <script src="script1.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+ 
+    
+</body>
+<!-- Features to add 1.Footer, 2.Countdown, 3.Super offers and grid of food images-->
+</html>
